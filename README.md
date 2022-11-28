@@ -1,12 +1,12 @@
 # boa-detector
 
-This package detects the Boa web server string in HTTP headers.  All
+This Zeek package detects the Boa web server string in HTTP headers.  All
 Boa versions are considered vulnerable:
 
 https://www.microsoft.com/en-us/security/blog/2022/11/22/vulnerable-sdk-components-lead-to-supply-chain-risks-in-iot-and-ot-environments/
 
 When the `/^Boa\/.*/` server string is observed, this package will raise 
-a notice `BoaDetector::Vulnerable_Boa_Web_Server` for the connection `c$id$resp_h`.
+a notice `BoaDetector::Vulnerable_Boa_Web_Server` for the connection's `c$id$resp_h`.
 
 ## notice.log
 
